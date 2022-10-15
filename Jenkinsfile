@@ -1,9 +1,6 @@
 pipeline{
     agent {
-        label 'linuxagent'
-    }
-    tools{
-        maven 'local_maven'
+        maven 'apache-maven-3.8.6'
     }
     stages{
         stage ('Build'){
